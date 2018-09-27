@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CattleTools"
+             x:Class="CattleTools.MainPage">
+
+    <ScrollView>
+        <StackLayout Spacing="5" Margin="5">
+
+            <Label Text="IP:"/>
+            <Editor x:Name="ip"/>
+            
+            <Label Text="SELECT:"/>
+            <Editor Text="{Binding select}" HeightRequest="40"/>
+
+            <Label Text="FROM"/>
+            <Editor Text="{Binding from}" HeightRequest="40"/>
+
+            <Label Text="WHERE"/>
+            <Editor Text="{Binding where}" HeightRequest="40"/>
+
+            <Label Text="ORDER BY"/>
+            <Editor Text="{Binding orderby}" HeightRequest="40"/>
+
+            <Label Text="GROUP BY"/>
+            <Editor Text="{Binding groupby}" HeightRequest="40"/>
+
+            <Label Text="NOMBRE CONSULTA"/>
+            <Editor Text="{Binding nombreConsulta}" HeightRequest="40"/>
+
+            <Label Text="CONSULTA ID"/>
+            <Editor Text="{Binding consultaid}" HeightRequest="40"/>
+
+            <Button Text="ENVIAR" Clicked="click"/>
+            
+            <Label Text="CONSULTA"/>
+            <Editor x:Name="resConsulta" HeightRequest="40"/>
+
+            <Label Text="CONSULTACAMPO"/>
+            <Editor x:Name="resConsultaCampo" HeightRequest="40"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
