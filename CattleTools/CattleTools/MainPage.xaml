@@ -5,7 +5,7 @@
              x:Class="CattleTools.MainPage">
 
     <ScrollView>
-        <StackLayout Spacing="5" Margin="5">
+        <StackLayout Spacing="5" Padding="20,20,20,20">
 
             <Label Text="IP:"/>
             <Editor x:Name="ip"/>
