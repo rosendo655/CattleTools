@@ -13,7 +13,7 @@ namespace CattleTools
 		{
 			InitializeComponent();
 
-			MainPage = new CattleTools.MainPage();
+			MainPage = new CattleTools.MasterDetail.MasterDetailPage();
 		}
 
 		protected override void OnStart ()
